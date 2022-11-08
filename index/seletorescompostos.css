@@ -1,0 +1,41 @@
+/* 
+<article>
+
+    <h3></h3>
+
+    <p>
+        <a>
+            <b></b>
+        </a>
+    </p>
+
+    <p>
+        <a>
+            <b></b>
+        </a>
+    </p>
+
+    <p>
+        <a>
+            <b></b>
+        </a>
+    </p>
+
+</article> 
+*/
+
+/* article a {}  -->  Vai pegar todos os "a" que estao dentro de um article*/
+/* article p b {}  -->  Vai pegar todos os "b" que estao dentro de um "p", que esse "p", deve estar dentro de um article*/
+/* b > p {}  -->  Vai pegar todos os "b", que é filho direto de "p", nesse caso nao existe nenhum */
+/* h3 + p {}  -->  Vai selecionar um "p", que é um irmao adjacente (vem logo após) um "h3"*/
+/* h3 ~ p {}  -->  Vai pegar todos os "p" que vem depois de um h3 */
+
+
+/* a[title]-> Vai pegar todos os elementos "a" que possuem o atributo title EX (<a title></a>)*/
+/* img[alt="text"]-> Vai pegar todos os elementos img que possuem o atributo alt com o valor "text EX (<img alt="text"></img>)"*/
+/* a[href^="http"]-> Vai pegar todos os elementos "a" que possuem o valor do atributo href iniciado com http EX(<a href="http://google"></a>)*/
+/* img[src$=".png"]-> Vai pegar todos os elemntos "img" que possuem o valor do atributo src terminado com .png EX(<img src="--.png"></img>)*/
+/* 
+img:not([alt])-> Vai pegar todas as imagens que nao possuem o elemento alt EX(<img src="blablalba"></img>)
+p:not(.destaque)-> Vai pegar todos os "p" que nao possuem a classe destaque
+*/

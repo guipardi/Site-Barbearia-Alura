@@ -1,0 +1,142 @@
+header {
+  background: #cccccc;
+}
+
+.div-nav {
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+header nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 110px 0 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: all .2s;
+}
+
+header nav ul li a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+main {
+  width: 75%;
+  margin: auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  margin: 0 0 10px 0;
+  font-size: 22px; 
+}
+
+.input-padrao {
+  margin: 0 0 30px 0;
+  padding: 15px 20px;
+  width: 50%;
+}
+
+.input-radio {
+  display: inline-block;
+}
+
+form textarea {
+  margin: 0 0 30px 0;
+  padding: 15px 20px;
+  width: 50%;
+}
+
+form fieldset legend {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.label-email {
+  display: inline;
+}
+
+.input-submit {
+  margin: 20px 0;
+  width: 40%;
+  font-weight: bold;
+  background: orange;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: .5s background;
+  transition: .5s letter-spacing;
+  transition: .5s transform;
+  border-radius: 5px;
+}
+
+.input-submit:hover {
+  background: darkorange;
+  letter-spacing: 2px;
+  transform: scale(1.05) /* Vai aumentar botao proporcionalmente em 20 por cento */; 
+}
+
+.fieldset-form {
+  margin: 20px 0;
+}
+
+table {
+  margin: 20px 0;
+}
+
+thead {
+  background: #555555;
+  font-weight: bold;
+  color: white;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+footer{
+  background-image: url(../produtos/bg.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  header .div-nav h1 {
+    text-align: center;
+  }
+
+  header nav ul {
+    position: static;
+    margin: 1em 0;
+  }
+
+  header nav ul li {
+    font-size: 15px;
+    text-align: center;
+  }
+}

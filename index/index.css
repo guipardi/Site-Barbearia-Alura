@@ -1,0 +1,190 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background: #cccccc;
+}
+
+.div-nav {
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+header nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 110px 0 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: all .2s;
+}
+
+header nav ul li a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+}
+
+.imagem-beneficios {
+  width: 59%;
+  display: inline-block;
+  transition: .4s opacity;
+  box-shadow: 10px 10px 15px black;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.5;
+}
+
+.imagemutensilios {
+  width: 120px;
+  float: left;
+}
+
+.principal-conteudo {
+  width: 75%;
+  margin: auto;
+}
+
+.paragrafos-principal {
+  margin: 0 0 0 130px;
+}
+
+.beneficios {
+  clear: left;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.titulo-principal {
+  font-size: 2em;  /* O dobro do tamanho da fonte principal */
+  text-align: center;
+  margin: 20px 0;
+  /* color: rgba(0, 0, 0, 0.3); */   /* O alpha vai de 0 até 1, sendo o 0, totalmente transaparente */
+  text-shadow: 2px 2px 3px black;
+}
+
+.principal p {
+  margin: 20px 0px;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.localizacao {
+  text-align: center;
+}
+
+.mapa-conteudo {
+  width: 75%;
+  margin: 1em auto;
+}
+
+.localizacao .titulo-principal {
+  padding: 50px 0 0 0;
+}
+
+.localizacao p {
+  margin: 30px;
+}
+
+.video {
+  width: 100%;
+  margin: 2em auto 0 auto;
+  text-align: center;
+}
+
+.conteudo-beneficios {
+  width: 75%;
+  margin: 1em auto;
+  padding: 3em 0 0 0;
+}
+
+.conteudo-beneficios h2 {
+  margin: 0.5em 0;
+}
+
+.lista-beneficios {
+  display: inline-block;
+  width: 39%;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+.itens:nth-child(1) {
+  font-weight: bold;
+}
+
+.itens::before{
+  	content: "★ ";
+}
+
+footer{
+  background-image: url(../produtos/bg.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+body {
+  width: 100%;
+}
+
+header .div-nav h1 {
+  text-align: center;
+  } 
+
+  header .div-nav nav ul {
+    width: 100%;
+    position: static;
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+
+  header .div-nav nav ul li {
+    font-size: 15px;
+  }
+
+  .div-nav {
+    width: 100%;
+    margin: auto;
+  }
+
+  .principal-conteudo {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .paragrafos-principal {
+    margin: 0;
+  }
+}
